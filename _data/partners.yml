@@ -1,10 +1,10 @@
 - name: Corfo
-  link: ../assets/images/Corfo.png
+  link: assets/images/Corfo.png
 - name: Sercotec
-  link: ../assets/images/Sercotec.png
+  link: assets/images/Sercotec.png
 - name: UFRO
-  link: ../assets/images/UFRO.png
+  link: assets/images/UFRO.png
 - name: Cantera
-  link: ../assets/images/Cantera.png
+  link: assets/images/Cantera.png
 - name: ISUANDES
-  link: ../assets/images/ISUANDES.png
+  link: assets/images/ISUANDES.png
