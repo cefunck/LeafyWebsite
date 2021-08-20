@@ -2,7 +2,7 @@ domain: cefunck.github.io/LeafyWebsite       # if you want to force HTTPS, speci
 url: https://cefunck.github.io/LeafyWebsite  # the base hostname and protocol for your site, e.g. http://example.com
 
 sass:
-    style: compressed
+  style: compressed
 
 defaults:
   - scope:
