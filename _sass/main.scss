@@ -4,6 +4,11 @@ $light_green: #81be25;
 $light: #edf2c2;
 $brown: #594c3c;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -12,39 +17,32 @@ img {
 
 body {
   text-align: center;
-  margin-right: 1%;
-  margin-left: 1%;
-  background-color: white;
 }
 
-//.subbody {
-  //background: url('/LeafyWebsite/assets/images/background_banner.png') no-repeat center ;
-  //background-size: cover;
-//}
-
 nav {
-  border-top: 10px solid $light_green;
-  border-bottom: 10px solid $light_green;
+  background-color: $light;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 1fr;
 }
 
 #banner-section {
-  text-align: center;
-  max-width: 1100px;
-  margin: auto;
+  background-color: $brown;
+  padding-top: 1%;
 }
 
 .banner-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: repeat(1, 200px);
-  align-items: center;
-  //backdrop-filter: blur(20px);
-  //border-radius: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .banner-title {
-  font-size: 48px;
+  font-size: 65px;
   font-family: Metropolis, Inter, X-LocaleSpecific, sans-serif;
+  color: $light_green;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .banner-body {
@@ -54,28 +52,51 @@ nav {
 }
 
 .banner-cell {
-  margin: 8%;
+  padding: 10%;
+  font-size: 23px;
+  color: $light;
+  font-family: Inter, X-LocaleSpecific, sans-serif;
 }
 
 #partners-section {
   text-align: center;
-  margin-top: 30px;
-  max-width: 1100px;
-  margin: 30px auto;
+  background-color: white;
 }
 
 .partners-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-template-rows: repeat(1, 200px);
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  .partners-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
+.partners-title {
+  font-size: 55px;
+  font-family: Metropolis, Inter, X-LocaleSpecific, sans-serif;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: $brown;
+}
+
+.partners-cell {
+  min-width: 30%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin: 1%;
+}
+
+footer {
+  background-color: $brown;
+}
+
+.footer-content {
+  color: white;
+  margin: 5%;
+  font-family: Metropolis, Inter, X-LocaleSpecific, sans-serif;
+  font-size: 100%;
+  display: inline-flex;
+  align-items: center;
+  grid-gap: 4%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -88,14 +109,31 @@ nav {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-}
 
-.partners-cell {
-  margin: 8%;
-}
+  .partners-title {
+    font-size: 500%;
+    font-family: Metropolis, Inter, X-LocaleSpecific, sans-serif;
+    padding: 5%;
+  }
 
-footer {
-  text-align: center;
-  padding: 3px;
-  border-top: 10px solid $light_green;
+  .partners-cell {
+    min-width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .banner-title {
+    font-size: 600%;
+    font-family: Metropolis, Inter, X-LocaleSpecific, sans-serif;
+    color: $light_green;
+    padding: 10%;
+  }
+
+  .banner-cell {
+    font-size: 220%;
+    color: $light;
+    font-family: Inter, X-LocaleSpecific, sans-serif;
+  }
 }
