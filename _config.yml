@@ -1,5 +1,7 @@
-domain: cefunck.github.io/LeafyWebsite       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://cefunck.github.io/LeafyWebsite  # the base hostname and protocol for your site, e.g. http://example.com
+domain: cefunck.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://cefunck.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /LeafyWebsite/      # place folder name if the site is served in a subfolder
+
 
 sass:
   style: compressed
