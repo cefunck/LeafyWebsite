@@ -21,10 +21,11 @@ body {
 
 header {
   position: fixed;
-  height: 8rem;
+  height: 10rem;
   width: 100%;
   background-color: $light;
   box-shadow: 0 0 1em rgba(0, 0, 0, .7);
+  transition: .25s;
 }
 
 #banner-section {
